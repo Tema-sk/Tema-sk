@@ -1,0 +1,44 @@
+// reset
+@use "_reset.scss";
+
+// fonts
+@use "_fonts.scss";
+
+// color
+@use "_color.scss";
+
+// constant
+@use "_constant.scss";
+
+// header
+@use "_header.scss";
+
+// section 1 head
+@use "_head.scss";
+
+// section 2 features
+@use "_features.scss";
+
+// section 3 payment
+@use "_payment.scss";
+
+// section 4 statistics
+@use "_statistics.scss";
+
+// section 5 reviews
+@use "_reviews.scss";
+
+// section 6 support
+@use "_support.scss";
+
+// section 7 request
+@use "_request.scss";
+
+// section 8 news
+@use "_news.scss";
+
+// section 9 click
+@use "_click.scss";
+
+// footer
+@use "_footer.scss";

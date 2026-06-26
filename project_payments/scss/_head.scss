@@ -1,0 +1,228 @@
+.main {
+    position: relative;
+    // .main__head
+
+    &__head {
+    }
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 7.4375rem 0.9375rem 5.5625rem 0.9375rem;
+
+    margin-bottom: 8.375rem;
+
+    @media (width <=48rem) {
+        flex-direction: column;
+
+        padding-top: 5rem;
+        margin-bottom: 0;
+    }
+
+    // .head__content
+
+    &__content {
+        padding-top: 4.375rem;
+        padding-left: 1.875rem;
+
+        min-width: 42.6875rem;
+
+        @media (width <=57.625rem) {
+            text-align: center;
+            padding-top: 0;
+            padding-left: 0;
+            margin: 0 auto;
+
+            min-width: 0;
+        }
+    }
+
+    // .head__title
+
+    &__title {
+        color: var(--black);
+        font-size: clamp(2.5rem, 8vw, 5.625rem);
+
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        line-height: 1.17;
+
+        text-transform: none;
+
+        margin-bottom: 2.0625rem;
+
+        span {
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: "";
+
+                position: absolute;
+
+                // куди йому стати:
+                top: 50%;
+                left: 70%;
+                transform: translate(-50%, -50%); // Центруємо відносно слова
+
+                width: 4.15em;
+                height: 1.8em;
+
+                background: url("../img/svg/shape.svg") top left / cover no-repeat;
+                z-index: -1;
+            }
+        }
+    }
+
+    // .head__text
+
+    &__text {
+        color: var(--black);
+        font-size: clamp(1rem, 5vw, 1.5rem);
+
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        line-height: 1.375;
+
+        text-transform: none;
+
+        max-width: 32.5rem;
+        width: 100%;
+        padding-left: 0.6875rem;
+        margin-bottom: 4.9375rem;
+
+        @media (width <=57.625rem) {
+            margin: 0 auto 4.9375rem;
+            padding-left: 0;
+        }
+    }
+
+    // .head__action
+    &__action {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+
+        margin-bottom: 2.0625rem;
+        padding-left: 0.875rem;
+
+        @media (width <=57.625rem) {
+            justify-content: center;
+            padding-left: 0;
+        }
+
+        @media (width <=48rem) {
+            flex-direction: column;
+
+            align-items: center;
+        }
+    }
+
+    // .head__button
+
+    &__button {
+        border-radius: 0.3125rem;
+    }
+
+    // .head__button--white
+    &__button--white {
+        color: var(--black);
+        background-color: var(--white);
+
+        max-width: 16.3125rem;
+        width: 100%;
+
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+
+        border: 0.125rem solid var(--black);
+        border-radius: 0.3125rem;
+
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--red);
+            // transform: scale(0.95);
+        }
+    }
+    // .head__rating
+
+    &__rating {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+
+        padding-left: 2.5rem;
+
+        @media (width <=57.625rem) {
+            justify-content: center;
+
+            padding-left: 0;
+        }
+    }
+
+    // .head__img
+
+    &__img {
+        max-width: 58rem;
+        width: 100%;
+        height: auto;
+
+        margin-left: -2.125rem;
+        margin-right: -12.9375rem;
+
+        @media (width <=57.625rem) {
+            padding-top: 5rem;
+            margin-left: 0;
+        }
+    }
+}
+.rating {
+    // .rating__number
+
+    &__number {
+        color: var(--black);
+        font-size: 3rem;
+
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+
+        text-transform: none;
+    }
+
+    // .rating__content
+
+    &__content {
+    }
+
+    // .rating__text
+
+    &__text {
+        color: var(--black);
+        font-size: 0.875rem;
+
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+
+        text-transform: none;
+
+        margin-bottom: 0.4375rem;
+        padding-left: 0.1875rem;
+    }
+
+    // .rating__img
+
+    &__img {
+    }
+}
+.star {
+    &__img {
+        width: 0.9375rem;
+        height: 0.9375rem;
+    }
+}

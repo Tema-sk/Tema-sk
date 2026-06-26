@@ -1,0 +1,196 @@
+.main {
+    // .main__reviews
+
+    &__reviews {
+    }
+}
+.reviews {
+    padding-top: 9.6875rem;
+    padding-bottom: 13rem;
+
+    background-color: var(--waves);
+
+    // .reviews__title
+
+    &__title {
+        color: var(--black);
+
+        font-size: clamp(2rem, 5vw, 3.875rem);
+
+        text-align: center;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        line-height: 1.23;
+
+        text-transform: none;
+
+        margin-bottom: 2.125rem;
+
+        position: relative;
+        z-index: 2;
+        span {
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: "";
+
+                position: absolute;
+
+                // куди йому стати:
+                top: 50%;
+                left: 80%;
+                transform: translate(-50%, -50%); // Центруємо відносно слова
+
+                width: 4.15em;
+                height: 1.8em;
+
+                background: url("../img/svg/shape.svg") top left / cover no-repeat;
+                z-index: -1;
+            }
+        }
+    }
+
+    // .reviews__text
+
+    &__text {
+        color: var(--black);
+        font-size: clamp(0.875rem, 2vw, 1.5rem);
+
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+
+        text-transform: none;
+
+        margin-bottom: 7.0625rem;
+    }
+
+    // .reviews__items
+
+    &__items {
+    }
+}
+
+.items-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5625rem;
+
+    position: relative;
+
+    // .items-reviews__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 2.875rem;
+        padding-bottom: 1.75rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        max-width: 54.875rem;
+
+        background-color: var(--white);
+        border-radius: 0.625rem;
+    }
+
+    // .items-reviews__arrow
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 3.4375rem;
+        height: 3.4375rem;
+        background-color: var(--waves);
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+
+        // Лінія стрілки
+        &::before {
+            content: "";
+            width: 2rem;
+            height: 0.0625rem;
+            background-color: var(--black);
+
+            // Щоб лінія не залежала від флекс-контейнера в плані позиціонування
+            position: absolute;
+        }
+
+        // Носик стрілки
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0.5625rem; // 9px
+            height: 0.5625rem; // 9px
+            border-top: 0.0625rem solid var(--black);
+            border-right: 0.0625rem solid var(--black);
+
+            // Ставимо носик в край лінії
+            right: 0.75rem;
+            transform: rotate(45deg);
+        }
+
+        &--prev {
+            left: 122px; // Половина ширини кнопки
+            // Повертаємо всю кнопку разом з вмістом
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        &--next {
+            right: 122px;
+            transform: translateY(-50%);
+        }
+
+        &:hover {
+            filter: brightness(0.95);
+        }
+    }
+
+    // .items-reviews__img
+
+    &__img {
+        width: 4.0625rem;
+        height: 4.0625rem;
+    }
+
+    &__title {
+        color: var(--black);
+        font-size: clamp(1rem, 3vw, 1.5rem);
+
+        padding-bottom: 1.9375rem;
+
+        text-align: center;
+        // font-family: "Rubik", sans-serif;
+        // font-weight: 400;
+        line-height: 1.04;
+
+        text-transform: none;
+
+        span {
+            color: var(--gray);
+            font-size: 1.125rem;
+        }
+    }
+
+    // .items-review__text
+
+    &__text {
+        color: var(--black);
+        font-size: clamp(1.125rem, 3vw, 1.625rem);
+
+        text-align: center;
+        // font-family: "Rubik", sans-serif;
+        // font-weight: 400;
+        line-height: 1.65;
+    }
+}

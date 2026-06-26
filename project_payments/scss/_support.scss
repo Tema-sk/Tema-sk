@@ -1,0 +1,177 @@
+.main {
+    // .main__support
+
+    &__support {
+    }
+}
+
+.support {
+    // .support__container
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        gap: 5.8125rem;
+
+        padding-top: 15.875rem;
+        padding-left: 1.1875rem;
+        padding-bottom: 43.1875rem;
+
+        @media (width <=57.625rem) {
+            padding-top: 3.375rem;
+            gap: 2.0625rem;
+
+            padding-bottom: 12.5rem;
+        }
+
+        @media (width <=48rem) {
+            flex-direction: column;
+            align-items: center;
+
+            text-align: center;
+
+            padding-bottom: 3.1875rem;
+        }
+    }
+
+    // .support__info
+
+    &__info {
+        flex: 0 1 45%; // Не росте, може звужуватись, займає 45% ширини
+    }
+
+    // .support__questions
+
+    &__questions {
+        flex: 0 1 50%; // Займає 50% ширини
+    }
+}
+.info-support {
+    // .info-support__content
+
+    &__content {
+        color: var(--black);
+        padding-left: 1.1875rem;
+    }
+
+    // .info-support__title
+
+    &__title {
+        position: relative;
+        z-index: 2;
+
+        font-size: clamp(2.625rem, 8vw, 3.875rem);
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: none;
+
+        margin-bottom: 5rem;
+
+        span {
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: "";
+
+                position: absolute;
+
+                // куди йому стати:
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); // Центруємо відносно слова
+
+                width: 4.15em;
+                height: 1.8em;
+
+                rotate: -2deg;
+
+                background: url("../img/svg/shape.svg") top left / cover no-repeat;
+                z-index: -1;
+            }
+        }
+    }
+
+    // .info-support__text
+
+    &__text {
+        font-size: clamp(0.875rem, 3vw, 1.25rem);
+
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        line-height: 1.8;
+
+        text-align: left;
+
+        text-transform: none;
+
+        padding-left: 1.1875rem;
+
+        margin-bottom: 3.375rem;
+    }
+    // info-support__list
+    &__list {
+        color: #3489d1;
+        text-decoration: underline;
+
+        transition: color 0.5s ease;
+
+        &:hover {
+            color: var(--red);
+        }
+    }
+
+    // .info-support__button
+
+    &__button {
+        text-align: center;
+
+        padding-top: 0.9375rem;
+    }
+}
+
+.questions-support {
+    // .questions-support__content
+
+    &__content {
+    }
+
+    // .questions-support__items
+
+    &__items {
+    }
+
+    // .questions-support__item
+
+    &__item {
+        position: relative;
+
+        padding-top: 2.125rem;
+        padding-bottom: 2.6875rem;
+        padding-left: 0.625rem;
+
+        padding-right: 1.5625rem;
+
+        border-bottom: 1px solid var(--black);
+        &:first-child {
+            border-top: 1px solid var(--black);
+        }
+
+        &::after {
+            content: "";
+
+            width: 0.8125rem;
+            height: 0.4375rem;
+            rotate: -45deg;
+
+            border-bottom: 0.1875rem solid var(--black);
+            border-left: 0.1875rem solid var(--black);
+
+            position: absolute;
+            right: 0.4375rem;
+            top: 2.5rem;
+        }
+    }
+}

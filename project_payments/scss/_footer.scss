@@ -1,0 +1,271 @@
+.footer {
+    // .footer__container
+
+    &__container {
+        padding-top: 16rem;
+        padding-bottom: 3.125rem;
+
+        // відступи при використанні;
+        left: 0.9375rem; // 15px
+        right: 0.9375rem; // 15px
+    }
+
+    // .footer__body
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.25rem;
+
+        color: var(--black);
+
+        margin-bottom: 5.0625rem;
+
+        @media (width <=33.125rem) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 0.9375rem;
+        }
+    }
+
+    // .footer__logo
+
+    &__logo {
+        padding-left: 2.4375rem;
+
+        @media (width <=57.625rem) {
+            padding-left: 0;
+        }
+    }
+
+    // .footer__list
+
+    &__list {
+    }
+
+    // .footer__help
+
+    &__help {
+    }
+
+    // .footer__content
+
+    &__content {
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+        font-size: clamp(0.875rem, 1vw, 1.125rem);
+
+        text-align: center;
+
+        text-transform: none;
+    }
+}
+.logo-footer {
+    font-size: clamp(1.75rem, 1vw, 2rem);
+    // .logo-footer__title
+
+    &__title {
+        font-family: "Circular", sans-serif;
+        font-weight: 700;
+
+        text-transform: none;
+
+        margin-bottom: 2rem;
+
+        padding-left: 0.875rem;
+    }
+    // .logo-footer__contacts
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+
+        font-size: clamp(0.875rem, 1vw, 1.125rem);
+    }
+    // .logo-footer__email
+
+    &__email {
+        margin-bottom: 1rem;
+    }
+
+    // .logo-footer__tel
+
+    &__tel {
+        font-size: clamp(0.875rem, 1vw, 1.125rem);
+    }
+
+    &__email,
+    &__tel {
+        transition: font-weight 0.5s ease;
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
+.list-footer {
+    // .list-footer__title
+
+    &__title {
+    }
+
+    // .list-footer__list
+
+    &__list {
+    }
+
+    // .list-footer__item
+
+    &__item {
+    }
+
+    // .list-footer__link
+
+    &__link {
+    }
+}
+.list-footer,
+.help-footer {
+    // .help-footer__title
+
+    &__title {
+        font-size: clamp(1.25rem, 3vw, 1.75rem);
+
+        font-family: "PT Serif", serif;
+        font-weight: 400;
+
+        text-transform: none;
+
+        margin-bottom: 1.375rem;
+    }
+
+    // .help-footer__list
+
+    &__list {
+    }
+
+    // .help-footer__item
+
+    &__item {
+    }
+
+    // .help-footer__link
+
+    &__link {
+        color: var(--gray);
+        font-size: clamp(0.875rem, 1vw, 1.125rem);
+        line-height: 2.28;
+        text-transform: none;
+
+        transition: color 0.5s linear;
+
+        &:hover {
+            color: var(--black);
+        }
+    }
+}
+.content-footer {
+    // .content-footer__section
+
+    &__section {
+        margin-bottom: 2.75rem;
+    }
+
+    // .content-footer__title
+
+    &__title {
+        color: #0e0e0e;
+        font-size: clamp(1.25rem, 2vw, 1.75rem);
+
+        font-family: "PT Serif", serif;
+        font-weight: 400;
+
+        text-transform: none;
+
+        margin-bottom: 1.5625rem;
+    }
+
+    // .content-footer__address
+
+    &__address {
+        color: var(--gray);
+        font-size: clamp(0.875rem, 1vw, 1.125rem);
+
+        line-height: 1.78;
+
+        text-transform: none;
+
+        margin-bottom: 3.375rem;
+    }
+
+    // .content-footer__socials
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__link {
+        transition: opacity 0.5s ease;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+
+    // .content-footer__newsletter
+
+    &__newsletter {
+    }
+    // .content-footer__subtitle
+
+    &__subtitle {
+        color: var(--gray);
+        font-size: 0.9375rem;
+
+        line-height: 1.87;
+        margin-bottom: 0;
+        letter-spacing: 0.0875rem;
+        text-transform: none;
+
+        margin-bottom: 0.5rem;
+    }
+
+    // .content-footer__form
+
+    &__form {
+        display: flex;
+        gap: 10px;
+    }
+}
+.email {
+    @media (width <=57.625rem) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.9375rem;
+    }
+    // .email__input
+
+    &__input {
+        border: 0.125rem solid var(--black);
+        border-radius: 0.3125rem;
+
+        padding-left: 1.3125rem;
+
+        @media (width <=57.625rem) {
+            min-height: 3.125rem;
+        }
+    }
+
+    // .email__button
+
+    &__button {
+        @media (width <=768px) {
+            width: 100%;
+        }
+    }
+}

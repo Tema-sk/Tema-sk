@@ -1,0 +1,194 @@
+.main {
+    // .main__news
+
+    &__news {
+    }
+}
+.news {
+    background-color: var(--beige);
+    // .news__container
+
+    &__container {
+        padding-top: 26.375rem;
+        padding-bottom: 20.5rem;
+
+        @media (width <= 57.625rem) {
+            padding-top: 6.25rem;
+            padding-bottom: 200px;
+        }
+    }
+
+    // .news__subetitle
+
+    &__subetitle {
+        color: var(--black);
+        font-size: clamp(0.875rem, 3vw, 1.25rem);
+
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+
+        letter-spacing: 0.0625rem;
+        text-transform: uppercase;
+
+        margin-bottom: 1.5625rem;
+    }
+
+    // .news__title
+
+    &__title {
+        position: relative;
+        z-index: 2;
+
+        color: var(--black);
+        font-size: clamp(2rem, 8vw, 3.875rem);
+
+        text-align: center;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        line-height: 1.1;
+        text-transform: none;
+
+        margin-bottom: 7.375rem;
+
+        span {
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: "";
+
+                position: absolute;
+
+                // куди йому стати:
+                top: 50%;
+                left: 100%;
+                transform: translate(-50%, -50%); // Центруємо відносно слова
+
+                width: 4.15em;
+                height: 1.8em;
+
+                background: url("../img/svg/shape.svg") top left / cover no-repeat;
+                z-index: -1;
+            }
+        }
+    }
+
+    // .news__items
+
+    &__items {
+    }
+}
+.items-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 2.6875rem;
+
+    padding-left: 2.375rem;
+
+    @media (width <=48rem) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 0;
+    }
+
+    // .items-news__item
+
+    &__item {
+        max-width: 22.5625rem;
+    }
+
+    // .items-news__link
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        padding: 0.3125rem;
+
+        border-radius: 0.3125rem;
+
+        transition: box-shadow 0.5s ease;
+        &:hover {
+            box-shadow: 0.0625rem 0.0625rem 0.3125rem var(--black);
+        }
+    }
+
+    // .items-news__img
+
+    &__img {
+        margin: 0 auto; // Центруємо горизонтально
+
+        margin-bottom: 2.25rem;
+    }
+
+    // .items-news__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; // Цей блок заповнить увесь вільний простір
+
+        color: var(--black);
+    }
+
+    // .items-news__date
+
+    &__date {
+        display: inline-block;
+        color: var(--red);
+
+        font-size: clamp(0.875rem, 3vw, 1.0625rem);
+
+        letter-spacing: 0.059rem;
+        text-transform: uppercase;
+
+        margin-bottom: 1.5625rem;
+    }
+
+    // .items-news__title
+
+    &__title {
+        font-size: clamp(1.125rem, 3vw, 2rem);
+
+        font-family: "PT Serif", serif;
+        font-weight: 400;
+        line-height: 1.19;
+
+        text-transform: none;
+
+        margin-bottom: 2.625rem;
+
+        flex-grow: 1;
+    }
+
+    // .items-news__text
+
+    &__text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5625rem;
+
+        font-size: clamp(0.875rem, 3vw, 18px);
+        line-height: 1.8;
+        text-transform: none;
+
+        margin-top: auto;
+
+        &::after {
+            content: "";
+
+            width: 0.375rem;
+            height: 0.375rem;
+            rotate: -45deg;
+
+            border-bottom: 0.0625rem solid var(--black);
+            border-right: 0.0625rem solid var(--black);
+        }
+    }
+}

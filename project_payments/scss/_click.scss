@@ -1,0 +1,112 @@
+.main {
+    &__container {
+        position: relative;
+    }
+    // .main__click
+
+    &__click {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        bottom: -88px;
+
+        // відступи при використанні position: absolute;
+        left: 0.9375rem; // 15px
+        right: 0.9375rem; // 15px
+    }
+}
+.click {
+    padding-left: 2.5625rem;
+
+    &__container {
+        background-color: var(--white);
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.6875rem;
+
+        width: 100%;
+
+        border-radius: 0.625rem;
+
+        padding-top: 3.1875rem;
+        padding-bottom: 3.25rem;
+
+        box-shadow: 0 0.625rem 3.125rem rgba(0, 0, 0, 0.1);
+
+        @media (width <= 48rem) {
+            padding-top: 31px;
+            padding-bottom: 31px;
+        }
+
+        @media (width <= 30rem) {
+            flex-direction: column;
+        }
+    }
+    // .click__content
+    &__content {
+        color: var(--black);
+    }
+    // .click__title
+
+    &__title {
+        position: relative;
+        z-index: 2;
+
+        font-size: clamp(1.5rem, 3vw, 3rem);
+
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+
+        text-transform: none;
+
+        margin-bottom: 1.6875rem;
+
+        span {
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: "";
+
+                position: absolute;
+
+                // куди йому стати:
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); // Центруємо відносно слова
+
+                width: 4.15em;
+                height: 1.8em;
+
+                rotate: -2deg;
+
+                background: url("../img/svg/shape.svg") top left / cover no-repeat;
+                z-index: -1;
+            }
+        }
+    }
+
+    // .click__text
+
+    &__text {
+        font-size: clamp(0.875rem, 3vw, 1.25rem);
+
+        line-height: 1.4;
+
+        text-transform: none;
+    }
+
+    // .click__button
+
+    &__button {
+        min-height: 4.375rem;
+
+        font-size: clamp(0.875rem, 3vw, 1.0625rem);
+
+        padding: 24px 46px;
+
+        text-transform: none;
+    }
+}

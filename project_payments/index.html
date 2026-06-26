@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Підключення шрифтів -->
+	<!-- Rubik regular -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap" rel="stylesheet">
+	<!-- Roboto regular -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+	<!-- PT Serif regular Bold-->
+	<link href="https://fonts.googleapis.com/css2?family=PT%20Serif:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- Arvo regular-->
+	<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400&display=swap" rel="stylesheet">
+
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері -->
+
+	<title>Payments</title>
+	<!-- Відкрити усі вкладки в новій вкладці -->
+	<!-- <base target="_blank" href="/fonts/"> -->
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__container">
+
+				<!-- верхня частина шапки -->
+				<div class="header__top header-top">
+					<div class="header-top__logo">
+						<a href="#">Logo</a>
+					</div>
+					<form action="#" class="header-top__action action">
+
+						<div class="action__search">
+							<img class="action__img action__img--search" src="img/svg/dandruff.svg" alt="search">
+							<input class="action__input action__input--search" type="search"
+								placeholder="Search here..">
+						</div>
+
+						<div class="action__email">
+							<img class="action__img action__img--email" src="img/svg/email.svg" alt="email">
+							<input class="action__input action__input--email" type="email" placeholder="email">
+						</div>
+
+						<div class="action__phone">
+							<img class="action__img action__img--phone" src="img/svg/phone.svg" alt="phone">
+							<input class="action__input action__input--phone" type="tel" placeholder="tel">
+						</div>
+
+					</form>
+				</div>
+
+				<!-- нижня частина шапки -->
+				<div class="header__bottom header-bottom">
+					<button class="header-bottom__icon-menu">
+						<span></span>
+					</button>
+					<nav class="header-bottom__menu menu">
+						<ul class="menu__list">
+
+							<li class="menu__item">
+								<a href="#">Home</a>
+							</li>
+
+							<li class="menu__item">
+								<a href="#">Products</a>
+								<img class="menu__img" src="img/svg/check.svg" alt="check">
+							</li>
+
+							<li class="menu__item">
+								<a href="#">Pages</a>
+								<img class="menu__img" src="img/svg/check.svg" alt="check">
+							</li>
+							<li class="menu__item">
+								<a href="#">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">Contact us</a>
+							</li>
+
+						</ul>
+					</nav>
+
+					<div class="header-bottom__action">
+
+						<div class="header-bottom__language">
+							<img class="header-bottom__img" src="img/svg/vector.svg" alt="vector">
+							<img class="header-bottom__img" src="img/svg/vector.svg" alt="vector">
+							<div class="header-bottom__text">English</div>
+						</div>
+
+						<button type="button" class="header-bottom__button header-bottom__button--red button">
+							Sign up
+						</button>
+					</div>
+
+				</div>
+
+			</div>
+
+		</header>
+
+		<main class="main">
+			<div class="main__container">
+
+				<section class="main__head head">
+					<div class="head__content">
+						<h1 class="head__title">
+							<span>Start</span> accepting payments in 3 minutes
+
+						</h1>
+						<p class="head__text">
+							Integrate xyz payment gateway
+							without any technical knowledge.
+
+						</p>
+						<div class="head__action">
+							<button type="button" class="head__button button">
+								Start now
+							</button>
+
+							<button type="button" class="head__button button head__button--white">
+								Read the developer docs
+							</button>
+						</div>
+						<div class="head__rating rating">
+							<div class="rating__number">
+								4.7
+							</div>
+							<div class="rating__content">
+								<div class="rating__text">
+									top rated on trustpilot
+								</div>
+								<div class="rating__img star">
+									<img class="star__img" src="img/svg/star.svg" alt="star">
+									<img class="star__img" src="img/svg/star.svg" alt="star">
+									<img class="star__img" src="img/svg/star.svg" alt="star">
+									<img class="star__img" src="img/svg/star.svg" alt="star">
+									<img class="star__img" src="img/svg/star.svg" alt="star">
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="head__img">
+						<img class="head__foto" src="img/foto.png" alt="foto">
+					</div>
+
+				</section>
+
+				<section class="main__features features">
+					<div class="features__container">
+
+						<div class="features__items">
+
+							<div class="features__item">
+
+								<span class="features__span features__span--light-red"></span>
+
+								<div class="features__content">
+
+									<h3 class="features__title">
+										code free setup
+									</h3>
+
+									<div class="features__text">
+										<p>One click integration </p>
+									</div>
+								</div>
+							</div>
+
+							<div class="features__item">
+								<span class="features__span features__span--green"></span>
+								<div class="features__content">
+
+									<h3 class="features__title">
+										Lowest Price
+									</h3>
+
+									<div class="features__text">
+										<p>1% transaction fee, lowest in Industry</p>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="features__item">
+								<span class="features__span features__span--orange"></span>
+								<div class="features__content">
+
+									<h3 class="features__title">
+										Global withdrawals
+									</h3>
+
+									<div class="features__text">
+										<p>Instant transfer to your bank account</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="main__payment payment">
+					<div class="payment__container">
+
+						<div class="payment__content">
+							<h2 class="payment__title">
+								Accepting <span>payments</span> should not be hard
+							</h2>
+							<div class="payment__text">
+								<p>
+									Accept payment using invoice, quick checkout, API’s and payment
+									buttons
+								</p>
+							</div>
+						</div>
+
+						<div class="payment__items items-payment">
+
+							<article class="items-payment__item">
+
+								<a href="#" class="items-payment__list">
+									<div class="items-payment__image">
+										<img src="img/rectangle.png" class="items-payment__img" alt="Beats Logo">
+									</div>
+
+									<div class="items-payment__content">
+
+										<div class="items-payment__category">
+											Invoices
+										</div>
+
+										<div class="items-payment__title">
+											<h3>
+												One click onvoice with full accounting setup
+											</h3>
+										</div>
+
+										<div class="items-payment__text">
+											<p>Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu
+												text will be here.
+
+												Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu
+												text will be here.
+
+												Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu
+												text will be here.</p>
+										</div>
+									</div>
+								</a>
+							</article>
+
+							<article class="items-payment__item">
+
+								<a href="#" class="items-payment__list">
+									<div class="items-payment__image">
+										<img src="img/rectangle2.jpg" class="items-payment__img" alt="Beats Logo">
+									</div>
+
+									<div class="items-payment__content">
+
+										<div class="items-payment__category">
+											quick checkout
+										</div>
+
+										<div class="items-payment__title">
+											<h3>
+												No website? No issues
+											</h3>
+										</div>
+
+										<div class="items-payment__text">
+											<p>Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu
+												text will be here.</p>
+										</div>
+									</div>
+								</a>
+							</article>
+
+							<article class="items-payment__item">
+
+								<a href="#" class="items-payment__list">
+									<div class="items-payment__image">
+										<img src="img/rectangle3.jpg" class="items-payment__img" alt="Beats Logo">
+									</div>
+
+									<div class="items-payment__content">
+
+										<div class="items-payment__category">
+											no-nonsense comission
+										</div>
+
+										<div class="items-payment__title">
+											<h3>
+												Just pay 1% of transaction amount
+											</h3>
+										</div>
+
+										<div class="items-payment__text">
+											<p>Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu
+												text will be here.
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+
+						</div>
+
+						<div class="payment__question question">
+							<div class="question__title">
+								<h3>
+									Having issues with integration and setup
+								</h3>
+							</div>
+
+							<button type="button" class="question__button button">
+								Let us know
+							</button>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="main__statistics statistics">
+
+					<div class="statistics__container">
+
+						<article class="statistics__trust trust">
+							<div class="trust__content">
+								<div class="trust__title">
+									<span>
+										20000+
+									</span>
+									trusted by thousands of sellers
+								</div>
+
+								<div class="trust__text">
+									Your money and customer data is in safe hand. Best in class security
+									and encryption.
+								</div>
+
+							</div>
+
+							<div class="trust__items items-trust">
+
+								<div class="items-trust__item">
+									<div class="items-trust__title">Fastest growing gateway</div>
+									<div class="items-trust__text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Laborum consequuntur doloremque, optio accusantium
+										magni omnis! Dolores eveniet dolore nam, eligendi reprehenderit
+										asperiores at hic alias sit, itaque in doloremque beatae.</div>
+
+								</div>
+
+								<div class="items-trust__item">
+									<div class="items-trust__title">Your personal success manager</div>
+									<div class="items-trust__text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Laborum consequuntur doloremque, optio accusantium
+										magni omnis! Dolores eveniet dolore nam, eligendi reprehenderit
+										asperiores at hic alias sit, itaque in doloremque beatae.</div>
+
+								</div>
+
+								<div class="items-trust__item">
+									<div class="items-trust__title">Hassel free integration</div>
+									<div class="items-trust__text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Laborum consequuntur doloremque, optio accusantium
+										magni omnis! Dolores eveniet dolore nam, eligendi reprehenderit
+										asperiores at hic alias sit, itaque in doloremque beatae.</div>
+
+								</div>
+							</div>
+						</article>
+
+						<article class="statistics__efficiency efficiency">
+
+							<div class="efficiency__benefits benefits">
+								<div class="benefits__content">
+
+									<div class="benefits__items">
+
+										<div class="benefits__item">
+											<div class="benefits__number benefits__number--green">
+												2300+
+
+											</div>
+											<div class="benefits__text">
+												Sellers
+											</div>
+										</div>
+
+										<div class="benefits__item">
+											<div class="benefits__number benefits__number--light-red">
+												32k
+
+											</div>
+											<div class="benefits__text">
+												Daily transactions
+											</div>
+										</div>
+
+										<div class="benefits__item">
+											<div class="benefits__number benefits__number--orange">
+												12b+
+
+											</div>
+											<div class="benefits__text">
+												worth of transactions
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="efficiency__content">
+
+								<h3 class="efficiency__title">
+									Another <span>money</span> heading goes here
+								</h3>
+								<div class="efficiency__text">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex ad beatae
+									magnam doloribus sed, soluta officiis, corporis ab reiciendis ea,
+									alias ipsa incidunt laudantium nulla eligendi. Praesentium inventore
+									nobis nihil.
+								</div>
+
+								<button type="button" class="efficiency__button button">
+									Sign up now
+								</button>
+							</div>
+
+						</article>
+					</div>
+
+				</section>
+
+				<section class="main__reviews reviews">
+
+					<h2 class="reviews__title">
+						<span>Don’t</span> trust us. Trust the industry leaders
+					</h2>
+					<div class="reviews__text">
+						<p>
+							See what are users are saying about our services and suppor
+						</p>
+					</div>
+
+					<div class="reviews__items items-reviews">
+
+						<div class="items-reviews__arrow items-reviews__arrow--prev">
+						</div>
+						<div class="items-reviews__arrow items-reviews__arrow--next">
+						</div>
+
+						<div class="items-reviews__item">
+
+							<img class="items-reviews__img" src="img/foto.jpg" alt="foto">
+							<div class="items-reviews__title">
+								Dani daniels
+								<br><span>Texas, USA</span>
+							</div>
+							<div class="items-reviews__text">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
+								odit itaque vel, assumenda explicabo saepe aperiam placeat incidunt.
+								Dolorum expedita impedit unde commodi necessitatibus dignissimos
+								facilis est nesciunt, consectetur qui!
+							</div>
+						</div>
+
+						<!-- <div class="items-reviews__item">
+
+								<img class="items-reviews__img" src="img/foto.jpg" alt="foto">
+								<div class="items-reviews__title">
+									Dani daniels
+									<br><span>Texas, USA</span>
+								</div>
+								<div class="items-reviews__text">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
+									odit itaque vel, assumenda explicabo saepe aperiam placeat incidunt.
+									Dolorum expedita impedit unde commodi necessitatibus dignissimos
+									facilis est nesciunt, consectetur qui!
+								</div>
+							</div>
+
+							<div class="items-reviews__item">
+
+								<img class="items-reviews__img" src="img/foto.jpg" alt="foto">
+								<div class="items-reviews__title">
+									Dani daniels
+									<br><span>Texas, USA</span>
+								</div>
+								<div class="items-reviews__text">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
+									odit itaque vel, assumenda explicabo saepe aperiam placeat incidunt.
+									Dolorum expedita impedit unde commodi necessitatibus dignissimos
+									facilis est nesciunt, consectetur qui!
+								</div>
+							</div> -->
+
+					</div>
+
+				</section>
+
+				<section class="main__support support">
+
+					<div class="support__container">
+
+						<div class="support__info info-support">
+							<div class="info-support__content">
+								<h2 class="info-support__title">Enter your custom <span>title
+										here</span>
+								</h2>
+								<div class="info-support__text">
+									<p>
+										For more information, please visit the
+										<a href="#" class="info-support__list">Help Center.</a>
+									</p>
+
+									<p>
+										Also find all faq’s on our faq’s page
+									</p>
+								</div>
+								<a href="#" class="info-support__button button">Go to Faq’s</a>
+							</div>
+						</div>
+
+						<div class="support__questions questions-support">
+							<div class="questions-support__content">
+								<ul class="questions-support__items">
+									<li class="questions-support__item">Maecenas tincidunt lacus at
+										velit.
+									</li>
+									<li class="questions-support__item">Phasellus id sapien in sapien
+										iaculis congue.
+									</li>
+									<li class="questions-support__item">Maecenas tincidunt lacus at
+										velit.
+									</li>
+									<li class="questions-support__item">Donec semper sapien a libero.
+									</li>
+									<li class="questions-support__item">Phasellus id sapien in sapien
+										iaculis congue.
+									</li>
+									<li class="questions-support__item">Phasellus id sapien in sapien
+										iaculis congue.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<section class="main__request request">
+					<div class="request__container">
+
+						<div class="request__callback callback-request">
+							<h2 class="callback-request__title">
+								Request call back
+							</h2>
+							<div class="callback-request__text">
+								<p>Morbi non quam nec dui luctus rutrum.</p>
+							</div>
+
+							<form action class="callback-request__form form-callback">
+
+								<div class="form-callback__item">
+									<label class="form-callback__label" for="form-callback-product">Product</label>
+
+									<select class="form-callback__input form-callback__input--select "
+										name="form-callback-id" id="form-callback-product">
+										<option value="1">Invoices</option>
+										<option value="2">Proforma invoice</option>
+										<option value="3">Invoice for prepayment </option>
+										<option value="4">Export invoice</option>
+										<option value="5">Corrective invoice</option>
+									</select>
+								</div>
+
+								<div class="form-callback__item">
+									<label class="form-callback__label" for="form-callback-email">Email</label>
+									<input class="form-callback__input form-callback__input--email"
+										id="form-callback-email" type="email" placeholder="random@example.com">
+								</div>
+
+								<button type="submit" class="form-callback__button button">
+									CALL ME
+								</button>
+							</form>
+
+							<div class="callback-request__text callback-request__text--footer">
+								<p>Add anything here to make it look good.</p>
+							</div>
+
+						</div>
+
+						<div class="request__contacts contacts-request">
+							<h2 class="contacts-request__title">
+								Have questions in <span>your mind</span>?
+							</h2>
+							<div class="contacts-request__text">
+								<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+									sint. Velit officia consequat.
+								</p>
+							</div>
+							<div class="contacts-request__info">
+								<p class="contacts-request__label">Feel free to contact us here</p>
+								<a href="tel:1888888888" class="contacts-request__link">
+									Call:
+									<span>1.888.888.888</span></a>
+
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<section class="main__news news">
+					<div class="news__container">
+
+						<div class="news__subetitle">
+							News & Updates
+						</div>
+
+						<h2 class="news__title">
+							<span>We</span> talk about finance
+						</h2>
+
+						<div class="news__items items-news">
+
+							<article class="items-news__item">
+
+								<a href="#" class="items-news__link">
+
+									<div class="items-news__img">
+										<img src="img/rectangle2.jpg" alt="news">
+									</div>
+
+									<div class="items-news__content">
+										<time datetime="2014-08-30" class="items-news__date">8/30/14</time>
+
+										<h3 class="items-news__title">
+											Fusce elementum quam quis ipsum egestas euismod.
+										</h3>
+
+										<div class="items-news__text">
+											<p>Read More</p>
+										</div>
+
+									</div>
+
+								</a>
+
+							</article>
+
+							<article class="items-news__item">
+
+								<a href="#" class="items-news__link">
+
+									<div class="items-news__img">
+										<img src="img/rectangle2.jpg" alt="news">
+									</div>
+
+									<div class="items-news__content">
+										<time datetime="2014-08-30" class="items-news__date">1/31/14</time>
+
+										<h3 class="items-news__title">
+											Nam euismod tellus sit amet metus ultricies convallis.
+
+										</h3>
+
+										<div class="items-news__text">
+											<p>Read More</p>
+										</div>
+
+									</div>
+
+								</a>
+
+							</article>
+
+							<article class="items-news__item">
+
+								<a href="#" class="items-news__link">
+
+									<div class="items-news__img">
+										<img src="img/rectangle2.jpg" alt="news">
+									</div>
+
+									<div class="items-news__content">
+										<time datetime="2014-08-30" class="items-news__date">2/11/12</time>
+
+										<h3 class="items-news__title">
+											Nullam ullamcorper lorem a commodo finibus.
+
+										</h3>
+
+										<div class="items-news__text">
+											<p>Read More</p>
+										</div>
+
+									</div>
+
+								</a>
+
+							</article>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="main__click click">
+					<div class="click__container">
+						<div class="click__content">
+							<h2 class="click__title">
+								Your <span>payment</span> is just a click away
+							</h2>
+							<div class="click__text">
+								<p>Ut vel sapien molestie, accumsan dui eu, imperdiet nulla.</p>
+							</div>
+						</div>
+
+						<a href="#" class="click__button button">Create an account</a>
+					</div>
+				</section>
+
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+
+					<div class="footer__logo logo-footer">
+
+						<h2 class="logo-footer__title">Logo</h2>
+
+						<address class="logo-footer__contacts">
+							<a href="mailto:support@9.com" class="logo-footer__email">support@9.com</a>
+							<a href="tel:+88888888" class="logo-footer__tel">+308(088)888-888-88</a>
+						</address>
+					</div>
+
+					<div class="footer__list list-footer">
+						<h3 class="list-footer__title">
+							Links
+						</h3>
+
+						<ul class="list-footer__list">
+
+							<li class="list-footer__item">
+								<a href="#" class="list-footer__link">
+									Home
+								</a>
+							</li>
+
+							<li class="list-footer__item"><a href="#" class="list-footer__link">Product</a></li>
+							<li class="list-footer__item"><a href="#" class="list-footer__link">Pricing</a></li>
+							<li class="list-footer__item"><a href="#" class="list-footer__link">About us</a></li>
+							<li class="list-footer__item"><a href="#" class="list-footer__link">Careers</a></li>
+							<li class="list-footer__item"><a href="#" class="list-footer__link">Features</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__help help-footer">
+						<h3 class="help-footer__title">Help & Support</h3>
+						<ul class="help-footer__list">
+							<li class="help-footer__item"><a href="#" class="help-footer__link">FAQ</a></li>
+							<li class="help-footer__item"><a href="#" class="help-footer__link">Blog</a></li>
+							<li class="help-footer__item"><a href="#" class="help-footer__link">Contact Us</a></li>
+							<li class="help-footer__item"><a href="#" class="help-footer__link">Support</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__content content-footer">
+
+						<div class="content-footer__section">
+
+							<h3 class="content-footer__title">
+								Our Address
+							</h3>
+
+							<address class="content-footer__address">
+								4517 Washington Ave. Manchester, Kentucky 39495
+							</address>
+
+							<div class="content-footer__socials">
+								<a class="content-footer__link" href="#">
+									<img src="img/svg/socials/facebook.svg" alt="facebook"></a>
+								<a class="content-footer__link" href="#">
+									<img src="img/svg/socials/twitter.svg" alt="twitter"></a>
+								<a class="content-footer__link" href="#">
+									<img src="img/svg/socials/linkedin.svg" alt="linkedin"></a>
+								<a class="content-footer__link" href="#">
+									<img src="img/svg/socials/google-plus.svg" alt="google plus"></a>
+							</div>
+						</div>
+
+						<div class="content-footer__newsletter">
+
+							<h3 class="content-footer__subtitle">
+								SIGN UP FOR NEWSLETTER
+							</h3>
+
+							<form action="#" class="content-footer__form email">
+								<input class="email__input" type="email" placeholder="Email address">
+								<button type="submit" class="email__button button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+				<div class="footer__bottom">
+					<p>© Copyright <time datetime="2021">2021</time> Your
+						company name
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/script.js"></script>
+	</div>
+
+</body>
+
+</html>
